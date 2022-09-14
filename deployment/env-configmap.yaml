@@ -7,7 +7,7 @@ data:
   POSTGRES_PASSWORD: mugi27938392
   POSTGRES_HOST: postgresdb.c8fylkhtlboe.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: arn:aws:s3:::bucket-541453266566-dev
+  AWS_BUCKET: myawsbucket-541453266566-dev
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing
