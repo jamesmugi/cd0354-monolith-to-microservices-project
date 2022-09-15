@@ -12,6 +12,7 @@ install:
   - sudo cp -r node-v17.0.0-linux-x64/{bin,include,lib,share} /usr/
   - node --version => v17.0.0
   - sudo apt install nodejs
+  - sudo apt install libuv1 >= 1.6.1
 
 # Scripts to be run such as tests
 before_script:
