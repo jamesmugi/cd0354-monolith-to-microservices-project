@@ -1,16 +1,16 @@
 language: node_js
 node_js:
- - "18.0.0"
+ - "17.0.0"
 services:
   - docker
 
 # Pre-testing installs
 install:
   - echo "--------- Installing dependencies-----------"
-  - sudo curl -LO https://nodejs.org/dist/v18.0.0/node-v18.0.0-linux-x64.tar.xz
-  - sudo tar -xvf node-v18.0.0-linux-x64.tar.xz
-  - sudo cp -r node-v18.0.0-linux-x64/{bin,include,lib,share} /usr/
-  - node --version => v18.0.0
+  - sudo curl -LO https://nodejs.org/dist/v17.0.0/node-v17.0.0-linux-x64.tar.xz
+  - sudo tar -xvf node-v17.0.0-linux-x64.tar.xz
+  - sudo cp -r node-v17.0.0-linux-x64/{bin,include,lib,share} /usr/
+  - node --version => v17.0.0
   - sudo apt install nodejs
 
 # Scripts to be run such as tests
@@ -46,5 +46,3 @@ after_success:
   - docker push jameskaranja/udagram-api-user:v1
   - docker push jameskaranja/udagram-frontend:v1
   - docker push jameskaranja/udagram-reverseproxy:v1
-
-
