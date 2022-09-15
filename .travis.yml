@@ -1,5 +1,10 @@
 version: 2.1
 language: node_js
+node_js:
+ - "16.17.0"
+ env:
+- MY_VAR=EverythignIsAwesome
+- NODE_ENV=TEST
 jobs:
   lint-app:
     docker:
