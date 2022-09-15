@@ -16,7 +16,7 @@ install:
 
 # Scripts to be run such as tests
 before_script:
-  - npm test
+  - echo "No test"
 
 script:
   - docker --version # print the version for logging
